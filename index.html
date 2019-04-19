@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato%7CRoboto+Slab%7CPlayfair+Display+SC" rel="stylesheet">
+    <title>Makeshift IMDB</title>
+  </head>
+  <body>
+    <p class="mainTitle"><strong>Makeshift IMDB</strong></p>
+    <h1></h1>
+
+    <div id="topDiv">
+      <div class="inputdiv" id="t-error-div">
+      stuff
+      </div>
+      <div class="inputdiv" id="login-reg-div">
+        Hello!
+        <button id="t-login-button" class="button">Login</button>
+        <button id="t-reg-button" class="button">Register</button>
+      </div>
+      <div class="inputdiv" id="tam-div">
+        Click to add new movie:
+        <button id="add-movie-button" class="button">+</button>
+      </div>
+    </div>
+
+    <div id=main-login-div>
+      <span class="inputSpan">
+        Email:
+        <input type="text" id="emailLogin">
+      </span>
+      <span class="inputSpan">
+        Password:
+        <input type="password" id="passwordLogin">
+      </span>
+      <span>
+        <button id="login-submit-button" class="button">Submit and Login</button>
+      </span>
+    </div>
+
+    <div id=main-reg-div>
+      <span class="inputSpan">
+        First Name:
+        <input type="text" id="fnameReg">
+      </span>
+      <span class="inputSpan">
+        Last Name:
+        <input type="text" id="lnameReg">
+      </span>
+      <span class="inputSpan">
+        Email:
+        <input type="email" id="emailReg">
+      </span>
+      <span class="inputSpan">
+        Make a Password:
+        <input type="text" id="passwordReg">
+      </span>
+      <span>
+        <button id="reg-submit-button" class="button">Submit and Register</button>
+      </span>
+    </div>
+
+    <div id=add-movie-box>
+      <span class="inputSpan">
+        Title:
+        <input type="text" id="tamTitle">
+      </span>
+      <span class="inputSpan">
+        Producer:
+        <input type="text" id="tamProducer">
+      </span>
+      <span class="inputSpan">
+        Length:
+        <input type="text" id="tamLength">
+      </span>
+      <span class="inputSpan">
+        Rating:
+        <input type="text" id="tamRating">
+      </span>
+      <span class="inputSpan">
+        Genre:
+        <input type="text" id="tamGenre">
+      </span>
+      <span>
+        <button id="tam-button" class="button">Add Movie</button>
+      </span>
+    </div>
+
+    <div id="mainInputDiv">
+
+      <!-- <span class="inputSpan">
+        Color1:
+        <input type="text" id="COLOR1">
+      </span>
+      <span class="inputSpan">
+        Adjective1:
+        <input type="text" id="ADJ1">
+      </span>
+      <span class="inputSpan">
+        Verb1:
+        <input type="text" id="VERB1">
+      </span> -->
+    </div>
+    <div id="mainHolder">
+
+    </div>
+
+
+    <!-- <span id=the-button-holder>
+      <button id="the-button">Insert into Mad Lib</button>
+    </span> -->
+    <!-- <span id="button-holder">
+      <button id="create-movie-button" class="button">+</button>
+    </span> -->
+
+
+    <!-- <div id="flex-container">
+        <div id="noun-box" class="flex-item"></div>
+        <div id="verb-box" class="flex-item"></div>
+    </div> -->
+
+    <script src="moviesApp.js"></script>
+  </body>
+</html>
