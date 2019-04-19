@@ -7,7 +7,7 @@ var movies = null;
 
 
 var getMovies = function () {
-  fetch("http://localhost:8080/movies", {
+  fetch("https://deployimdb.herokuapp.com/movies", {
     credentials: 'include'
   }).then(function (response) {
       if (response.status == 401) {
@@ -164,7 +164,7 @@ var showEditForm = function(movie, newMovieContainer) {
 
             console.log(data);
           //{} following fetch is for options
-          fetch(`http://localhost:8080/movies/${movie.id}`, {
+          fetch(`https://deployimdb.herokuapp.com/movies/${movie.id}`, {
             method: 'PUT',
             credentials: 'include',
             body: data,
@@ -184,7 +184,7 @@ var showEditForm = function(movie, newMovieContainer) {
 };
 
 var deleteMovie = function (id) {
-  fetch(`http://localhost:8080/movies/${id}`, {
+  fetch(`https://deployimdb.herokuapp.com/movies/${id}`, {
     method: 'DELETE',
     credentials: 'include'
   }).then(function (response) {
@@ -195,7 +195,7 @@ var deleteMovie = function (id) {
 };
 
 var updateMovie = function (id) {
-  fetch(`http://localhost:8080/movies/${id}`, {
+  fetch(`https://deployimdb.herokuapp.com/movies/${id}`, {
     method: 'PUT',
     credentials: 'include'
   }).then(function (response) {
@@ -312,7 +312,7 @@ loginSubmitButton.onclick = function() {
 
   console.log(data);
   //{} following fetch is for options
-  fetch("http://localhost:8080/sessions", {
+  fetch("https://deployimdb.herokuapp.com/sessions", {
     method: 'POST',
     body: data,
     credentials: 'include',
@@ -363,7 +363,7 @@ regSubmitButton.onclick = function () {
 
       console.log(data);
     //{} following fetch is for options
-    fetch("http://localhost:8080/users", {
+    fetch("https://deployimdb.herokuapp.com/users", {
       method: 'POST',
       body: data,
       credentials: 'include',
@@ -418,7 +418,7 @@ tamButton.onclick = function () {
 
       console.log(data);
     //{} following fetch is for options
-    fetch("http://localhost:8080/movies", {
+    fetch("https://deployimdb.herokuapp.com/movies", {
       method: 'POST',
       body: data,
       credentials: 'include',
